@@ -16,12 +16,22 @@ function App() {
       date: new Date(),
     },
   ];
+
   return (
     <>
       <h1>Title</h1>
       <p>Some text</p>
       <Button />
-      <JournalItem />
+      <JournalItem
+        title={data[0].title}
+        text={data[0].text}
+        date={data[0].date}
+      />
+      <JournalItem
+        title={data[1].title}
+        text={data[1].text}
+        date={data[1].date}
+      />
     </>
   );
 }

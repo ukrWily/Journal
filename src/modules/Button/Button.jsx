@@ -1,6 +1,6 @@
 import "./Button.css";
 //
-function JournalItem() {
+function Button() {
   return <button className="button accent">Save</button>;
 }
-export default JournalItem;
+export default Button;

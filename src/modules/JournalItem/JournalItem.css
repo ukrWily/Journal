@@ -10,10 +10,10 @@
   line-height: 28px;
 }
 .journal-item__date {
-  background: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
 }
 .journal-item__text {
-  background: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   overflow: hidden;
 }
 .journal-item__body {

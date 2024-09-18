@@ -1,12 +1,12 @@
 import "./App.css";
 import JournalItem from "./components/JournalItem/JournalItem.jsx";
-import Button from "./components/Button/Button.jsx";
 import CardButton from "./components/CardButton/CardButton.jsx";
 import LeftPanel from "./components/Layouts/LeftPanel/LeftPanel.jsx";
 import Body from "./components/Layouts/Body/Body.jsx";
 import Header from "./components/Header/Header.jsx";
 import JournalList from "./components/JournalList/JournalList.jsx";
 import JournalAddButton from "./components/JournalAddButton/JournalAddButton.jsx";
+import JournalForm from "./components/JournalForm/JournalForm.jsx";
 
 function App() {
   const data = [
@@ -45,7 +45,9 @@ function App() {
           </CardButton>
         </JournalList>
       </LeftPanel>
-      <Body>Body</Body>
+      <Body>
+        <JournalForm />
+      </Body>
     </div>
   );
 }

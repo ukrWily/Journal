@@ -1,4 +1,5 @@
 .card-button {
+  width: 100%;
   display: block;
   border-radius: 3px;
   background: rgba(255, 255, 255, 0.03);
@@ -8,7 +9,6 @@
   cursor: pointer;
   text-align: start;
   transition: all 0.2s;
-  margin-bottom: 10px;
 }
 .card-button:hover {
   background: rgba(255, 255, 255, 0.1);

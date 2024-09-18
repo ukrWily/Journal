@@ -1,6 +1,6 @@
 import "./Header.css";
 //
 function Header() {
-  return <>Logo</>;
+  return <div className="logo">Personal Journal</div>;
 }
 export default Header;

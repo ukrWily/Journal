@@ -14,7 +14,6 @@ const JournalForm = () => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const formProps = Object.fromEntries(formData);
-    console.log(formProps);
   };
   return (
     <form className="journal-form" onSubmit={addJournalItem}>
@@ -22,7 +21,12 @@ const JournalForm = () => {
       <input type="date" name="date" />
       <input type="text" name="tag" value={inputData} onChange={inputChange} />
       <textarea name="post"></textarea>
-      <Button text="Save" />
+      <Button
+        text="Save"
+        onClick={() => {
+          console.log("Pressed");
+        }}
+      />
     </form>
   );
 };

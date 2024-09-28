@@ -8,19 +8,19 @@ import JournalAddButton from "./components/JournalAddButton/JournalAddButton.jsx
 import JournalForm from "./components/JournalForm/JournalForm.jsx";
 
 const INITIAL_DATA = [
-  {
-    id: 1,
-    title: "Title",
-    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus error vero dignissimos, sit ratione id odit labore, necessitatibus maiores, accusantium nulla nisi ut quis quae facilis doloremque in cum perspiciatis.",
-    date: new Date(),
-  },
-  {
-    id: 2,
-    title: "Title two",
-    text: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus error vero dignissimos, sit ratione id odit labore, necessitatibus maiores, accusantium nulla nisi ut quis quae facilis doloremque in cum perspiciatis.
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus error vero dignissimos, sit ratione id odit labore, necessitatibus maiores, accusantium nulla nisi ut quis quae facilis doloremque in cum perspiciatis.`,
-    date: new Date(),
-  },
+  // {
+  //   id: 1,
+  //   title: "Title",
+  //   text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus error vero dignissimos, sit ratione id odit labore, necessitatibus maiores, accusantium nulla nisi ut quis quae facilis doloremque in cum perspiciatis.",
+  //   date: new Date(),
+  // },
+  // {
+  //   id: 2,
+  //   title: "Title two",
+  //   text: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus error vero dignissimos, sit ratione id odit labore, necessitatibus maiores, accusantium nulla nisi ut quis quae facilis doloremque in cum perspiciatis.
+  //     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus error vero dignissimos, sit ratione id odit labore, necessitatibus maiores, accusantium nulla nisi ut quis quae facilis doloremque in cum perspiciatis.`,
+  //   date: new Date(),
+  // },
 ];
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
         title: item.title,
         text: item.text,
         date: new Date(item.date),
-        id: Math.max(...oldItems.map(i => i.id)) + 1
+        id: oldItems.length > 0 ? Math.max(...oldItems.map(i => i.id)) + 1 : 1
       }
     ]);
   };
